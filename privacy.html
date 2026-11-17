@@ -4,36 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy | Lexnetic Solutions</title>
-<meta name="theme-color" content="#140b07">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Big+Shoulders+Stencil+Display:wght@800&family=Barlow:wght@300;400;500&family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#0d0d0c">
+<link href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=bespoke-stencil@800&display=swap" rel="stylesheet">
 <style>
-:root{--espresso:#140b07;--paper:#fbf7f0;--cream:#f6efe3;--gold:#d2a565;--ink:#21140d;--muted:#7a6656;--hair:rgba(33,20,13,.08)}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--paper);color:var(--ink);font:400 17px/1.65 "Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+@font-face{font-family:"Ronzino";src:url(fonts/Ronzino-Regular.woff2) format("woff2");font-weight:300 400;font-display:swap}
+@font-face{font-family:"Ronzino";src:url(fonts/Ronzino-Bold.woff2) format("woff2");font-weight:700 900;font-display:swap}
+:root{--blk:#0d0d0c;--orange:#ff5a1f;--ylw:#ffd23f;--off:#f2efe8;--paper:#f6f3ec;--mute:#6f6a60}
+*{box-sizing:border-box;margin:0;padding:0}html{font-synthesis:none}
+body{background:var(--paper);color:var(--blk);font:400 17px/1.65 "Ronzino",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-header{background:var(--espresso);color:var(--cream);padding:120px 0 70px;position:relative;overflow:hidden}
-header:before{content:"";position:absolute;width:700px;height:700px;right:-250px;top:-380px;border-radius:50%;background:radial-gradient(closest-side,rgba(210,165,101,.25),transparent)}
-.wrap{width:min(760px,100% - 32px);margin-inline:auto;position:relative}
-.back{display:inline-flex;align-items:center;gap:10px;padding:6px 16px 6px 6px;border-radius:999px;background:rgba(246,239,227,.06);border:1px solid rgba(246,239,227,.1);font:600 14px/1 "Barlow Semi Condensed",sans-serif;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;transition:background .5s cubic-bezier(.32,.72,0,1)}
-.back:hover{background:rgba(246,239,227,.12)}
-.back span{width:28px;height:28px;border-radius:50%;background:var(--gold);color:var(--espresso);display:grid;place-items:center}
-h1{font:900 clamp(64px,11vw,130px)/.86 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;margin:34px 0 14px}
-h1 em{color:var(--gold);font-style:normal}
-.meta{font:600 13.5px/1.6 "Barlow Semi Condensed",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:rgba(246,239,227,.55)}
-main{padding:70px 0 110px}
-.item{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--hair)}
-.item h2{font:800 30px/1 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase}
-.item p{color:#4b3a2e}
-footer{background:var(--espresso);color:rgba(246,239,227,.55);padding:30px 0;font:600 13.5px/1.6 "Barlow Semi Condensed",sans-serif;letter-spacing:.08em}
-@media(max-width:640px){.item{grid-template-columns:1fr;gap:8px}header{padding:90px 0 54px}}
+.hz{height:16px;background:repeating-linear-gradient(-45deg,var(--orange) 0 18px,var(--blk) 18px 36px)}
+header{background:var(--blk);color:var(--off);padding:44px 0 70px}
+.wrap{width:min(860px,100% - 32px);margin-inline:auto}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.logo{font:800 28px/1 "Bespoke Stencil",Impact,sans-serif;text-decoration:none}.logo b{color:var(--orange)}
+.back{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:var(--blk);font:700 14px/1 "Ronzino";letter-spacing:.08em;text-transform:uppercase;padding:13px 16px;border-radius:4px;text-decoration:none}
+h1{font:400 clamp(70px,12vw,150px)/.86 "Tanker",Impact,sans-serif;text-transform:uppercase;margin:60px 0 18px}
+h1 span{color:var(--orange)}
+.meta{font:700 13px/1.6 "Ronzino";letter-spacing:.12em;text-transform:uppercase;color:#9a968d}
+main{padding:60px 0 100px}
+.item{display:grid;grid-template-columns:230px 1fr;gap:28px;padding:26px 0;border-bottom:1.5px solid #dcd6c9}
+.item h2{font:400 34px/.95 "Tanker",Impact,sans-serif;text-transform:uppercase}
+.item p{color:#3b3832}
+footer{background:var(--blk);color:#9a968d;padding:26px 0;font:700 13px/1.6 "Ronzino";letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:640px){.item{grid-template-columns:1fr;gap:6px}}
 </style>
 </head>
 <body>
+<div class="hz"></div>
 <header><div class="wrap">
-  <a class="back" href="index.html"><span>←</span>Back to quotes</a>
-  <h1>Privacy, <em>plainly.</em></h1>
+  <div class="top"><a class="logo" href="index.html">LEXNETIC<b>.</b></a><a class="back" href="index.html">← Back</a></div>
+  <h1>Privacy,<br><span>plainly.</span></h1>
   <div class="meta">Lexnetic Solutions · ABN 52 645 217 449 · Footscray VIC · Updated 17 Nov 2026</div>
 </div></header>
 <main><div class="wrap">
@@ -46,6 +48,7 @@ footer{background:var(--espresso);color:rgba(246,239,227,.55);padding:30px 0;fon
   <div class="item"><h2>Your rights</h2><p>Email <a href="mailto:lexnetic@gmail.com">lexnetic@gmail.com</a> to see, correct or delete your details. We'll respond within 30 days.</p></div>
   <div class="item"><h2>Complaints</h2><p>Contact us first. If you're not satisfied, you can contact the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au">oaic.gov.au</a>.</p></div>
 </div></main>
-<footer><div class="wrap">© 2026 LEXNETIC SOLUTIONS · <a href="index.html">QUOTES</a></div></footer>
+<div class="hz"></div>
+<footer><div class="wrap">© 2026 Lexnetic Solutions · <a href="index.html">Quotes</a></div></footer>
 </body>
 </html>
