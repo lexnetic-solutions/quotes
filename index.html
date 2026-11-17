@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Cleaning &amp; Waste Quotes, Melbourne | Lexnetic Solutions</title>
+<meta name="description" content="Melbourne businesses: tell us what cleaning or waste collection you need and we'll pass it to one vetted provider to quote you directly. Free for you.">
+<style>
+  :root{--cream:#efe0c7;--paper:#fbf6ee;--ink:#24140d;--muted:#6f5b4b;--gold:#c79a5a;--line:#e7d4b4}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Helvetica,Arial,sans-serif}
+  a{color:#9a6f33}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
+  header{background:var(--cream);border-bottom:1px solid var(--line)}
+  .bar{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+  .logo{font:28px Georgia,serif}.logo span{color:var(--gold)}
+  .loc{font:11px "Courier New",monospace;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+  .hero{padding:56px 0 40px}
+  h1{font:normal 40px/1.15 Georgia,serif;margin:0 0 16px;max-width:680px}
+  .lead{font-size:18px;color:var(--muted);max-width:620px;margin:0 0 28px}
+  .choices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:12px}
+  .card{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+  .card:hover{border-color:var(--gold)}
+  .card b{display:block;font:22px Georgia,serif;margin-bottom:6px}
+  .card small{color:var(--muted)}
+  .card .go{display:inline-block;margin-top:14px;background:var(--ink);color:var(--cream);padding:10px 16px;border-radius:999px;font-size:14px}
+  section{padding:36px 0;border-top:1px solid var(--line)}
+  h2{font:normal 26px Georgia,serif;margin:0 0 16px}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+  .step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+  .step:before{counter-increment:s;content:counter(s);display:inline-block;width:30px;height:30px;border-radius:50%;background:var(--cream);text-align:center;line-height:30px;font-family:Georgia,serif;margin-bottom:8px}
+  ul.tick{padding-left:20px;margin:0}
+  .note{background:var(--cream);border-radius:12px;padding:16px 18px;font-size:14px}
+  footer{background:var(--ink);color:var(--line);font-size:13px;padding:22px 0;margin-top:20px}
+  footer a{color:var(--gold)}
+  @media(max-width:640px){h1{font-size:30px}.choices,.steps{grid-template-columns:1fr}.hero{padding:36px 0 28px}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><div class="logo">Lexnetic<span>.</span></div><div class="loc">Footscray, VIC</div></div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Business cleaning or waste collection in Melbourne, without the ring-around.</h1>
+    <p class="lead">Tell us what your site needs. We pass your request to one vetted provider, who quotes you directly. Free for you, and no obligation to accept.</p>
+    <div class="choices">
+      <a class="card" id="btn-cleaning" href="#">
+        <b>Commercial cleaning</b>
+        <small>Offices, warehouses, clinics, retail, strata. Regular cleans from once a week.</small><br>
+        <span class="go">Request a cleaning quote →</span>
+      </a>
+      <a class="card" id="btn-waste" href="#">
+        <b>Waste &amp; recycling</b>
+        <small>General waste, recycling, cardboard, food organics. Any size business.</small><br>
+        <span class="go">Request a waste quote →</span>
+      </a>
+    </div>
+    <small style="color:var(--muted)">Takes about 2 minutes. Melbourne metro only.</small>
+  </div>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><b>Tell us what you need</b><br>Site type, size, how often, and when you'd like to start.</div>
+      <div class="step"><b>We match one provider</b><br>Only with your permission. We don't pass your details around to multiple companies.</div>
+      <div class="step"><b>They quote you directly</b><br>You deal with the provider. If the quote doesn't suit you, there's nothing more to do.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Good fit if you</h2>
+    <ul class="tick">
+      <li>are moving into, opening or fitting out a new site</li>
+      <li>aren't happy with your current cleaner or waste provider</li>
+      <li>have a contract ending soon and want a comparison</li>
+      <li>don't have time to chase several quotes</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Straight up</h2>
+    <p class="note">Lexnetic Solutions may receive a referral fee from the provider if you become their customer. This does not change the price you're quoted. We only share your details with one provider, and only after you've ticked the consent box on the form. See our <a href="privacy.html">privacy note</a>.</p>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  Lexnetic Solutions · ABN 52 645 217 449 · Footscray VIC<br>
+  M <a href="tel:+61416958871">+61 416 958 871</a> · E <a href="mailto:lexnetic@gmail.com">lexnetic@gmail.com</a> · <a href="privacy.html">Privacy</a>
+</div></footer>
+
+<script>
+  // Paste the Google Form link here once you've created the form (see FORM-QUESTIONS.md).
+  const FORM_URL = "";
+  const ids = {"btn-cleaning":"Commercial cleaning","btn-waste":"Waste and recycling"};
+  for (const id in ids) {
+    const a = document.getElementById(id);
+    if (FORM_URL) { a.href = FORM_URL; a.target = "_blank"; a.rel = "noopener"; }
+    else { a.href = "mailto:lexnetic@gmail.com?subject=" + encodeURIComponent("Quote request: " + ids[id]); }
+  }
+</script>
+</body>
+</html>
